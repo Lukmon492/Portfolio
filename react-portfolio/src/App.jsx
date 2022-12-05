@@ -1,3 +1,4 @@
+import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
