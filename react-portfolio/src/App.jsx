@@ -1,3 +1,4 @@
+import LineGradient from "./components/LineGradient";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
 import DotGroup from "./scenes/DotGroup";
@@ -32,6 +33,7 @@ const App = () => {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
+      <LineGradient />
     </div>
   );
 };
