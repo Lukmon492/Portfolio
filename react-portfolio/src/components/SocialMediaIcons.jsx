@@ -12,7 +12,7 @@ const SocialMediaIcons = () => {
         <img src="../assets/linkedin.png" alt="linkedin-link" />
       </a>
       <a
-        href="https://web.facebook.com/"
+        href="https://twitter.com/LukmanSanni15"
         className="hover:opacity-50 transition duration-500"
         target="_blank"
         rel="noreferrer"
@@ -20,7 +20,7 @@ const SocialMediaIcons = () => {
         <img src="../assets/twitter.png" alt="twitter-link" />
       </a>
       <a
-        href="https://www.facebook.com"
+        href="https://web.facebook.com/sanni.lukmon.7/"
         className="hover:opacity-50 transition duration-500"
         target="_blank"
         rel="noreferrer"
@@ -28,7 +28,7 @@ const SocialMediaIcons = () => {
         <img src="../assets/facebook.png" alt="facebook-link" />
       </a>
       <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/"
         className="hover:opacity-50 transition duration-500"
         target="_blank"
         rel="noreferrer"
