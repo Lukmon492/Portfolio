@@ -13,7 +13,7 @@ const MySkills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -24,8 +24,112 @@ const MySkills = () => {
           </p>
           <LineGradient className="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            Frontend Developer || HTML5 || CSS3 || React Js || JavaScript ||
+            Typescript || Version control system (VCS) Git & Github ||
+            TailwindCss CSS framework.
+          </p>
+        </motion.div>
+        <div className="mt-16 md:mt-0">
+          {isAboveMediumScreens ? (
+            <div
+              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+            before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+            >
+              <img
+                alt="skills"
+                className="z-10"
+                src="assets/skills-image.png"
+              />
+            </div>
+          ) : (
+            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+          )}
+        </div>
+      </div>
+      {/* SKILLS */}
+      <div className="md:flex md:justify-between gap-32 mt-16">
+        {/* EXPERIENCE */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">01</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Experience
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            There is once a saying that illustrated: <br /> Life is 10% what
+            happens to you and 90% how you react to it. It's not what happens to
+            you, but how you react to it that matters. How people treat you is
+            their karma; how you react is yours.
+          </p>
+        </motion.div>
+        {/* INNOVATIVE */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Innovative
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Practically implementation of ideas using Technologies as Means of
+            solving issues and problems by generating & capturing ideas,
+            developing a business-effectiveness strategy and applying business
+            improvement in the society.
+          </p>
+        </motion.div>
+        {/* IMAGINATIVE */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Imaginative
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Practically implementation of ideas using Technologies as Means of
+            solving issues and problems by generating & capturing ideas,
+            developing a business-effectiveness strategy and applying business
+            improvement in the society.
           </p>
         </motion.div>
       </div>

@@ -16,20 +16,20 @@ const Landing = ({ setSelectedPage }) => {
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
           before:rounded-t-[400px] before:w-full before:max-w-[600px] before:h-full
-          before:border-2 before:border-blue before:z-[-1]"
+          before:border-2 before:border-blue mt-[6rem] before:z-[-1]"
           >
             <img
               src="assets/rounded_corners.png"
               //   src="assets/profile-image.png"
               alt="profile"
-              className="w-[500px] h-[530px]"
-              //   className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
+              className="w-[550px] h-[600px]"
+              // className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
               //   max-w-[400px] md:max-w-[600px]"
             />
           </div>
         ) : (
           <img
-            src="assets/profile-image.png"
+            src="assets/rounded_corners.png"
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
               max-w-[400px] md:max-w-[600px]"
