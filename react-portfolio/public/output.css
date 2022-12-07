@@ -745,6 +745,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-48{
+  margin-top: 12rem;
+}
+
 .flex{
   display: flex;
 }
@@ -837,6 +841,10 @@ video {
   width: 16.666667%;
 }
 
+.w-2\/4{
+  width: 50%;
+}
+
 .max-w-\[400px\]{
   max-width: 400px;
 }
@@ -891,6 +899,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-full{
@@ -1013,6 +1025,18 @@ video {
 
 .pb-48{
   padding-bottom: 12rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .text-center{
@@ -1251,9 +1275,39 @@ body,
   left: -32px;
 }
 
+.before\:top-\[-120px\]::before{
+  content: var(--tw-content);
+  top: -120px;
+}
+
+.before\:left-1\/2::before{
+  content: var(--tw-content);
+  left: 50%;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
+}
+
+.before\:ml-\[-\]::before{
+  content: var(--tw-content);
+  margin-left: -;
+}
+
+.before\:ml-\[-110px\]::before{
+  content: var(--tw-content);
+  margin-left: -110px;
+}
+
+.before\:-ml-\[-110px\]::before{
+  content: var(--tw-content);
+  margin-left: 110px;
+}
+
+.before\:-ml-\[110px\]::before{
+  content: var(--tw-content);
+  margin-left: -110px;
 }
 
 .before\:h-6::before{
@@ -1453,6 +1507,10 @@ body,
 
   .md\:gap-16{
     gap: 4rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-start{
