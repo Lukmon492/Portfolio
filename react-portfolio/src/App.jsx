@@ -1,9 +1,10 @@
-import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Navbar from "./scenes/Navbar";
-import Projects from "./scenes/Projects";
 import Landing from "./scenes/Landing";
+import MySkills from "./scenes/MySkills";
 import DotGroup from "./scenes/DotGroup";
+import Projects from "./scenes/Projects";
+import Testimonials from "./scenes/Testimonials";
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 const App = () => {
@@ -40,8 +41,12 @@ const App = () => {
         <MySkills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Testimonials />
       </div>
     </div>
   );
