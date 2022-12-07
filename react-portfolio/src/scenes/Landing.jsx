@@ -11,12 +11,12 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10 "
     >
       {/* IMAGE SECTION */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-15 md:mt-32">
+      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
-          before:rounded-t-[400px] before:w-full before:max-w-[600px] before:h-full
-          before:border-2 before:border-blue mt-[6rem] before:z-[-1]"
+            className="relative z-0 ml-20 before:absolute before:-top-20 mt-[5rem]
+            before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] 
+            md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               src="assets/rounded_corners.png"
@@ -50,18 +50,21 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Sanni{" "}
+            Sanni {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 w-[30px]
-              xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px]
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 
+              xs:before:content-brush before:absolute before:-left-[32px] before:-top-[8rem] 
               before:z-[-1]"
             >
               Lukman
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Lately, I’ve discovered my passion for the world of web development
+            and the beauty behind building useful websites like the one you will
+            find in this portfolio. I’m now looking for a junior front-end dev
+            position to finally kick start my career and learn among
+            professionals.
           </p>
         </motion.div>
         {/* CALL TO ACTIONS */}

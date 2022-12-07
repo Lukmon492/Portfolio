@@ -7,7 +7,7 @@ const MySkills = () => {
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt:32">
+      <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -20,9 +20,9 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            My <span className="text-red">Skills</span>
+            MY <span className="text-red">SKILLS</span>
           </p>
-          <LineGradient className="w-1/3" />
+          <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
             Frontend Developer || HTML5 || CSS3 || React Js || JavaScript ||
             Typescript || Version control system (VCS) Git & Github ||
@@ -125,12 +125,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Practically implementation of ideas using Technologies as Means of
-            solving issues and problems by generating & capturing ideas,
-            developing a business-effectiveness strategy and applying business
-            improvement in the society.
-          </p>
+          <p className="mt-5">Turning ideas into real life products</p>
         </motion.div>
       </div>
     </section>
