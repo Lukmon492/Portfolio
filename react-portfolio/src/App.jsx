@@ -1,5 +1,6 @@
 import LineGradient from "./components/LineGradient";
 import Navbar from "./scenes/Navbar";
+import Footer from "./scenes/Footer";
 import Contact from "./scenes/Contact";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
@@ -53,6 +54,7 @@ const App = () => {
       <div className="w-5/6 mx-auto md:h-full">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 };
