@@ -1,5 +1,6 @@
 import LineGradient from "./components/LineGradient";
 import Navbar from "./scenes/Navbar";
+import Contact from "./scenes/Contact";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import DotGroup from "./scenes/DotGroup";
@@ -47,6 +48,10 @@ const App = () => {
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <Testimonials />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
       </div>
     </div>
   );
