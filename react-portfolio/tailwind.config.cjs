@@ -29,6 +29,9 @@ module.exports = {
         person1: "url('./assets/person-1.png')",
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",
+        mentor: "url('./assets/agas.png')",
+        mentor1: "url('./assets/jalasem.png')",
+        mentor2: "url('./assets/allmen.png')",
       },
     },
     screens: {
