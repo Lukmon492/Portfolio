@@ -10,39 +10,40 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
+    console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
     }
   };
+
   return (
-    <section id="contact" className="py-48">
-      {/* HEADING */}
+    <section id="contact" className="contact py-48">
+      {/* HEADINGS */}
       <motion.div
-        className="flex justify-end w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
-          hidden: { opacity: 0, x: -50 },
+          hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
+        className="flex justify-end w-full"
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME </span>
-            TO GET STARTED
+            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
           </div>
         </div>
       </motion.div>
-      {/* FORM & IMG */}
+
+      {/* FORM & IMAGE */}
       <div className="md:flex md:justify-between gap-16 mt-5">
         <motion.div
-          className="basis-1/2 flex justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -51,11 +52,12 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
+          className="basis-1/2 flex justify-center"
         >
           <img src="../assets/contact-image.jpeg" alt="contact" />
         </motion.div>
+
         <motion.div
-          className="basis-1/2 mt:10 md:mt-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -64,18 +66,22 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
+          className="basis-1/2 mt-10 md:mt-0"
         >
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/f56b1f07e814fbbe6189592e0881f697"
+            action="https://formsubmit.co/0d7f19bce0f80bd68b7cded45d9d93b5"
             method="POST"
           >
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
-              {...register("name", { required: true, maxLength: 100 })}
+              {...register("name", {
+                required: true,
+                maxLength: 100,
+              })}
             />
             {errors.name && (
               <p className="text-red mt-1">
@@ -99,9 +105,10 @@ const Contact = () => {
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
+
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
+              name="message"
               placeholder="MESSAGE"
               rows="4"
               cols="50"
@@ -115,13 +122,13 @@ const Contact = () => {
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
-                  "Max Length is 2000 char."}
+                  "Max length is 2000 char."}
               </p>
             )}
+
             <button
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 
-            hover:bg-red hover:text-white transition duration-500"
             >
               SEND ME A MESSAGE
             </button>

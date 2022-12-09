@@ -810,6 +810,18 @@ video {
   width: 25%;
 }
 
+.w-10\/12{
+  width: 83.333333%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
+}
+
+.w-2\/5{
+  width: 40%;
+}
+
 .max-w-\[400px\]{
   max-width: 400px;
 }
@@ -988,6 +1000,11 @@ video {
 .py-48{
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pr-0\.5{
@@ -1185,6 +1202,31 @@ body,
   left: 50%;
 }
 
+.before\:-left-\[25px\]::before{
+  content: var(--tw-content);
+  left: -25px;
+}
+
+.before\:-top-\[70px\]::before{
+  content: var(--tw-content);
+  top: -70px;
+}
+
+.before\:-left-\[35px\]::before{
+  content: var(--tw-content);
+  left: -35px;
+}
+
+.before\:-left-\[30px\]::before{
+  content: var(--tw-content);
+  left: -30px;
+}
+
+.before\:-left-\[50px\]::before{
+  content: var(--tw-content);
+  left: -50px;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
@@ -1263,6 +1305,21 @@ body,
   content: var(--tw-content);
 }
 
+.before\:content-person1::before{
+  --tw-content: url('./assets/person-1.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person2::before{
+  --tw-content: url('./assets/person-2.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person3::before{
+  --tw-content: url('./assets/person-3.png');
+  content: var(--tw-content);
+}
+
 .hover\:bg-blue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
@@ -1298,6 +1355,21 @@ body,
 
 .hover\:saturate-200:hover{
   --tw-saturate: saturate(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:saturate-50:hover{
+  --tw-saturate: saturate(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:saturate-100:hover{
+  --tw-saturate: saturate(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:saturate-150:hover{
+  --tw-saturate: saturate(1.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1366,6 +1438,10 @@ body,
 
   .md\:w-2\/4{
     width: 50%;
+  }
+
+  .md\:w-2\/5{
+    width: 40%;
   }
 
   .md\:max-w-\[600px\]{

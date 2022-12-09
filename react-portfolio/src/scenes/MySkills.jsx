@@ -3,7 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const MySkills = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
@@ -29,11 +29,12 @@ const MySkills = () => {
             TailwindCss CSS framework.
           </p>
         </motion.div>
+
         <div className="mt-16 md:mt-0">
-          {isAboveMediumScreens ? (
+          {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-            before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
               <img
                 alt="skills"
@@ -46,8 +47,9 @@ const MySkills = () => {
           )}
         </div>
       </div>
+
       {/* SKILLS */}
-      <div className="md:flex md:justify-between gap-32 mt-16">
+      <div className="md:flex md:justify-between mt-16 gap-32">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -76,6 +78,7 @@ const MySkills = () => {
             their karma; how you react is yours.
           </p>
         </motion.div>
+
         {/* INNOVATIVE */}
         <motion.div
           className="md:w-1/3 mt-10"
