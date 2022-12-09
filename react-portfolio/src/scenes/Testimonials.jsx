@@ -58,7 +58,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Amazing Projects you can now assume this as a stepping stone is this
+            Amazing Projects you can now assume this as a stepping stone in this
             field because there are more ahead.
           </p>
         </motion.div>
