@@ -24,7 +24,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Frontend Developer || HTML5 || CSS3 || React Js || JavaScript ||
+            Frontend Developer || HTML5 || CSS3 || Javascript || React Js ||
             Typescript || Version control system (VCS) Git & Github ||
             TailwindCss CSS framework.
           </p>
