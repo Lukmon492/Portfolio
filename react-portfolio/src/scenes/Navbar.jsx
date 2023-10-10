@@ -22,6 +22,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
+  // Fixing NavBar Bug to automatically close after selectedPage is selected
+  const handleSelected = () => {
+    setSelectedPage(selectedPage);
+    setIsMenuToggled(false);
+  };
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
@@ -74,33 +79,37 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 <img alt="close-icon" src="../assets/close-icon.svg" />
               </button>
             </div>
-
             {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                // onClick={handleSelected}
+                setSelectedPage={handleSelected}
               />
               <Link
                 page="Skills"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                // setSelectedPage={setSelectedPage}
+                setSelectedPage={handleSelected}
               />
               <Link
                 page="Projects"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                // setSelectedPage={setSelectedPage}
+                setSelectedPage={handleSelected}
               />
               <Link
                 page="Testimonials"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                // setSelectedPage={setSelectedPage}
+                setSelectedPage={handleSelected}
               />
               <Link
                 page="Contact"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
+                // setSelectedPage={setSelectedPage}
+                setSelectedPage={handleSelected}
               />
             </div>
           </div>
