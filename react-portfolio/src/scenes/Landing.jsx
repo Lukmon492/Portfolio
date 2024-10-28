@@ -58,11 +58,11 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lately, I’ve discovered my passion for the world of web development
-            and the beauty behind building useful websites like the one you will
-            find in this portfolio. I’m now looking for a junior front-end dev
-            position to finally kick start my career and learn among
-            professionals.
+            I am actively seeking a front-end developer position where I can
+            kickstart my career and grow alongside experienced professionals in
+            the field. With a strong foundation in React and a passion for
+            creating dynamic user experiences, I am eager to contribute my
+            skills while continually learning and developing my expertise.
           </p>
         </motion.div>
 
